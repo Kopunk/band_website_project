@@ -10,7 +10,6 @@
     </head>
     <body>
         <nav>
-            <!-- Using unordered list with one element as img inside nav was problematic -->
             <a href="index.php">
                 <img id="logo" src="images/husk__logo_white.svg" alt="Husk Logo">
             </a>
@@ -22,18 +21,29 @@
         </nav>
 
         <main>
-            <video src="videos/live_jazz_break.mp4" controls>
-                Video Unavailable
-            </video>
-            <form action="login_valid.php" method="POST" autocomplete="on">
-                <label for="email">Email</label>
-                <input type="email" placeholder="enter email" name="email">
+            <div id="videoform">
+                <video src="videos/live_jazz_break.mp4" controls>
+                    Video Unavailable
+                </video>
+                
+                <form action="contact_valid.php" method="POST" autocomplete="on">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="enter email" name="email" required>
 
-                <label for="password">Password</label>
-                <input type="password" placeholder="enter password" name="password">
 
-                <button type="submit">login</button>
-            </form>
+                    <label for="message">Your message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="When's the new album coming out?!"></textarea>
+
+                    <div id="formcheckbox">
+                        <label for="newsletter">Join the newsletter</label>
+                        <input type="checkbox" name="newsletter" checked>
+                    </div>
+                    
+
+                    <button type="submit">send</button>
+                </form>
+            </div>
+            
 
         </main>
 

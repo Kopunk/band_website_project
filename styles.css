@@ -8,7 +8,6 @@ ul {
 }
 
 body {
-
     background-color: #101010;
     color: white;
     font-family: 'Trebutchet MS', Tahoma, Arial, sans-serif;
@@ -21,6 +20,9 @@ a {
     color: white;
 }
 
+
+
+/* button style */
 button {
     font-size: 100%;
     font-family: inherit;
@@ -34,6 +36,8 @@ button {
     letter-spacing: 1px;
     text-transform: lowercase;
 }
+
+/* footer with social media shared across all site files */
 
 nav {
     width: 100vw;
@@ -73,6 +77,7 @@ nav a:hover {
     text-shadow: 0px 0px 10px #919191;
 }
 
+/* general for <main> */
 
 main {
     width: 100vw;
@@ -85,7 +90,6 @@ main {
     overflow-y: auto;
 
     display: flex;
-    flex-wrap: wrap;
 
     justify-content: space-evenly;
     align-items: center;
@@ -96,13 +100,36 @@ main > * {
 
 }
 
-main video {
-    height: 50%;
-    width: 50%;
-    max-height: 50vh;
+/* for index.php or similar */
 
-    /*border: 1px solid #919191;*/
+main video {
+    max-height: 50vh;
+    max-width: 100%;
+
 }
+
+#videoform {
+    width: 90%;
+    min-height: 30vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#videoform form {
+    width: 40%;
+    min-width: 50vh;
+    max-width: 100%;
+}
+
+#formcheckbox label {
+    /*using flex and row reverse to invert checkbox and label was problematic*/
+    padding-left: 15%;
+}
+
+/* for about.php or similar */
 
 main .desc {
     width: 50%;
@@ -114,6 +141,8 @@ main .desc {
 main .desc p {
     padding-top: 0.2rem;
 }
+
+/* for members.php or similar */
 
 #members {
     max-width: 90%;
@@ -129,6 +158,8 @@ main .desc p {
 #members th, #members td {
     padding: 0.5rem;
 }
+
+/* for login.php, index.php form or similar */
 
 main form {
     height: auto;
@@ -151,7 +182,7 @@ main form label {
     text-align: left;
 }
 
-main form input, main form button  {
+main form input, main form button, #message{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 0.5rem;
@@ -159,6 +190,7 @@ main form input, main form button  {
     padding: 0.5rem;
 }
 
+/* footer with social media shared between all site files */
 
 footer {
     position: fixed;
