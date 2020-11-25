@@ -1,0 +1,19 @@
+Strona www:
+- Odtwarzanie filmu znajduje się w index.php
+- linki do innych stron: 
+    - w pasku nawigacji linki lokalne do podstron
+    - w dolnej części strony linki do zewnętrznych mediów/ portali społecznościowych 
+- imitacja logowania: 
+    W pliku login.php, dostęp przez link w pasku nawigacji strony.
+    Po wpisaniu adresu email i hasła wyświetla się strona login_valid.php
+    która wyświetla jedynie wpisane przed chwilą przez użytkownika informacje.
+- formularz z zapisem do pliku:
+    Znajduje się w index.php obok lub pod filmem (w zależności od rozmiaru okna),
+    formularz posiada 3 pola: adres email, pole wiadomości oraz pole wyboru (checkbox). 
+    Po naciśnięciu przycisku 'send' wyśiwetla się strona contact_valid.php
+    z tekstem w zależności od zaznaczenia pola wyboru.
+    Do pliku messages.txt zapisywane są wprowadzone dane w formacie
+    "czas(POSIX);   adres email;    'wiadomość';    YES (lub NO);
+    "
+    z wiadomości są wcześniej usunięte są przejścia do nowej linii
+    YES lub NO jest zapisywane w zależności od zaznaczenia pola wyboru.

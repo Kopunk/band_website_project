@@ -1,0 +1,10 @@
+1604801323;	test@test.com;	'test98765  (breakline)  test 123456';	NO;
+1604801375;	test@test.com;	'lorem ipsum';	NO;
+1604801413;	asd@asd.pl;	'lorem ipsum         ipsum pisum';	YES;
+1604803335;	test@test.com;	'test  newline test  123';	YES;
+1604803353;	asd@asd.pl;	'lurem iptum ';	NO;
+1604803400;	qwerty@test.com;	'last test.  test.    lorem  ip\nsum';	YES;
+1604803721;	test@test.com;	'abcd';	NO;
+1604849178;	test@test.com;	'hello123';	YES;
+1604849989;	test@test.com;	'asd';	YES;
+1604850001;	test@test.com;	'lkj';	NO;
